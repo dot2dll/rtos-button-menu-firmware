@@ -1,6 +1,9 @@
 # RTOS-based Button-Driven Menu Navigation Firmware
 
-Firmware for an ESP32-based embedded device with 3 physical buttons, a 16-LED bar driven via 74HC595 shift register, and a button-navigated menu UI. Built on FreeRTOS tasks, queues, and a mutex for hardware access.
+Firmware for an ESP32-based embedded device with 3 physical buttons, a 16-LED bar driven via a shift register, and a button-navigated menu UI. Built on FreeRTOS tasks, queues, and a mutex for hardware access.
+
+Project Link: https://wokwi.com/projects/455630283201459201
+Simulate this project on https://wokwi.com
 
 ## Features
 
@@ -26,8 +29,6 @@ Firmware for an ESP32-based embedded device with 3 physical buttons, a 16-LED ba
 | Shift register MR (master reset) | GPIO 15 |
 
 Buttons are wired with `INPUT_PULLUP` (active LOW). Brightness is implemented via PWM on the OE pin (active LOW), so higher brightness = lower PWM duty on OE.
-
-Circuit diagram: https://wokwi.com/projects/452559063452352513
 
 ## Architecture
 
